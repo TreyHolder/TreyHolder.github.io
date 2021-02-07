@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+    height: 120px;
+}
+
+nav {
+background: rgb(0, 0, 0);
+height: 60px;
+display: flex;
+
+padding: 5px;
+max-width: 1920px;
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+z-index: 200;
+margin: 0 auto;
+}
+
+.desktop-nav {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.desktop-nav li{
+   list-style: none;
+   margin: 0 16px;
+}
+
+.desktop-nav li a{
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+ }
+
+ .desktop-nav li a:hover{
+    text-decoration: underline;
+    text-shadow: 3px 3px 3px purple;
+ }
+
+ header {
+     height: 100vh;
+     overflow: hidden;
+     position: relative;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+ }
+
+ header h1 {
+     padding: 5px;
+     background: rgba(0, 0, 0, 0.507);
+     text-shadow: 5px 3px 3px black;
+     color: white;
+     margin: 16px;
+     letter-spacing: 4px;
+     font-weight: 400px;
+     text-decoration: underline;
+     text-decoration-color: purple;
+ }
+
+header blockquote {
+    padding: 5px;
+    color: white;
+    background: rgba(0, 0, 0, 0.404);
+}
+
+ .main-video {
+     position: absolute;
+     min-height: 100vh;
+     min-width: 100%;
+     z-index: -100;
+ }
+
+ .wrapper {
+     margin: 0 auto;
+     max-width: 1920px;
+ }
+
+ .work h1 {
+
+     margin: 8px 0;
+     background: black;
+     color: white;
+     width: 200px;
+     padding: 8px;
+ }
+
+ .column-active {
+     background: rgb(155, 153, 153);
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px;
+  }
+
+  .img-active {
+      max-width: 1024px;
+      max-height: 512px;
+      width: 100%;
+      height: auto;
+      border: 3px inset rgb(27, 27, 27);
+      box-shadow: -5px 3px 6px rgba(0, 0, 0, 0.507);
+  }
+
+  .column-thumbnail {
+    background: gray;
+   float: left;
+   width: 50%;
+   padding: 10px;
+   height: 300px;
+ }
+
+
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+    }
+  }
